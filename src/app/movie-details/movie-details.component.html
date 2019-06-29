@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-md-4 col-sm-6" *ngFor="let movie of movies">
+      <div class="card-body shadow p-3 mb-5 bg-white rounded">
+        <!-- <div class="key">nombre: </div> -->
+        <h5 class="card-title">{{movie.name | uppercase }}</h5>
+        <!-- <div class="key">director: </div> -->
+        <p class="card-text">{{movie.director}}</p>
+        <!-- <div class="key">año: </div> -->
+        <p class="card-text">{{movie.year}}</p>
+      </div>
+      <!--card-body-->
+    </div>
+    <!--.col-->
+  </div>
+  <!--.row-->
+</div>
+<!--.container-->

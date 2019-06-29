@@ -1,0 +1,32 @@
+img {
+    max-width: 120px;
+    border-radius: 50%;
+    padding-top: 20px;
+    margin-left: 10%;
+}
+
+#username_text {
+    font-size: 27px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #17A2B8;
+    margin-top: 40%;
+}
+.description {
+    
+}
+
+@media (min-width: 1200px){
+    img {
+        max-width: 300px;
+        }
+
+    #username_text {
+        font-size: 33px;
+    }
+
+    .description {
+        font-size: 22px;
+        margin-top: 77px;
+    }
+}
+

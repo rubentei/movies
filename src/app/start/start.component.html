@@ -1,0 +1,59 @@
+<!-- <app-movie-details *ngFor= "let movie of misPeliculas" [movie]= "movie"></app-movie-details> -->
+<div class="container shadow p-3 mb-5 bg-white rounded">
+    <div class="titleContainer row">
+        <hr>
+<h2 class="title col-12 text-center text-uppercase mb-5">Mis peliculas</h2>
+</div><!--.titleContainer-->
+<div class="moviesContainer row">
+    <div class="movieNameContainer text-center col-3">
+        <p class="key text-capitalize">nombre:</p>
+        <p class="data">{{miPelicula.name}}</p>
+    </div><!--.movieNameContainer-->
+    <div class="movieYearContainer text-center col-3">
+        <p class="key text-capitalize">año:</p>
+        <p class="data">{{miPelicula.year}}</p>
+    </div><!--.movieYearContainer-->
+    <div class="movieDirectorContainer text-center col-3">
+        <p class="key text-capitalize">director:</p>
+        <p class="data">{{miPelicula.director}}</p>
+    </div><!--.movieDirectorContainer-->
+    <div class="movieRatingContainer text-center col-3">
+        <p class="key text-capitalize">rating:</p>
+        <p class="data">{{miPelicula.rating}}</p> 
+    </div><!--.movieRatingContainer-->
+ </div><!--.moviesContainer -->
+
+
+    <hr>
+<button class="btn btn-info next" (click)="addOne()">Siguiente</button>
+
+<div class="container" >
+<p>Nombre:</p> 
+<input #nameInput type="text">
+<p>Año:</p>
+<input #yearInput type="text">
+<p>Director:</p>
+<input #directorInput type="text"> <br>
+<p>Rating:</p>
+<input #ratingInput type="text"> <br>
+<hr>
+<button class="btn btn-info" (click)="addMovie(nameInput.value, yearInput.value, directorInput.value, ratingInput.value)">Añadir</button>
+<button class="btn btn-info change" (click)="changeMovie(nameInput.value, yearInput.value, directorInput.value, ratingInput.value)">Cambiar</button>
+</div><!--.container-->
+
+<div class="container">
+
+    <p>{{authorName}}</p>
+    <p>{{authorLastname}}</p>
+</div><!--.container-->
+<!-- One-way binding
+<input type="text" #name
+(keyup)="changeName(name.value)"/><br>
+
+<button (click)="changeName(name.value)">CAMBIA</button>
+
+<br>
+Two-way binding
+<input type="text" [(ngModel)]="miPelicula.name"/> -->
+
+</div><!--.container-->

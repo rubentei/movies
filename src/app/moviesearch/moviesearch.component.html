@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="subtitle text-center text-uppercase mb-3">
+    <h2>Buscador de películas</h2>
+  </div>
+  <!--.subtitle-->
+  <div class="movieInput">
+    <input type="text" #title>
+  </div>
+  <!--.movieInput-->
+
+  <div class="button-container">
+    <button class="btn btn-info mt-3" (click)=getMovie(title.value)>Buscar</button>
+  </div>
+  <!--.button-container-->
+</div>
+<!--.container-->
+
+<div class="container">
+  <div class="row mt-3">
+    <div *ngIf="movieResult.length === 0" class="no_movies_container card-body shadow p-3 mb-5 bg-white rounded col-12">
+      <p class="no_movies text-center mb-4 card-text">Introduce el título de una película para que salga una lista de películas</p>
+    </div>
+    <!--.no_movies_container-->
+
+    <div class="col-md-4 col-sm-6" *ngFor="let movie of movieResult">
+      <div *ngIf="movieResult.length >0">
+        <img src="{{url}}{{movie.poster_path}}" class="card-img-top" alt="imagen resultado">
+        <div class="card-body shadow p-3 mb-5 bg-white rounded">
+          <h5 class="card-title">{{movie.title | uppercase }}</h5>
+          <p class="card-text">{{movie.release_date | date: 'yyyy'}}</p>
+          <p class="card-text stars">{{movie.vote_average | rate}}</p>
+          <p class="card-text">{{movie.overview}}</p>
+        </div>
+        <!--card-body-->
+      </div>
+      <!--.col-->
+    </div>
+    <!--.row-->
+  </div>
+  <!--.container-->

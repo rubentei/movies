@@ -1,0 +1,19 @@
+<div class="container card shadow p-3 mb-5 bg-white rounded">
+  <div class="card-body">
+    <div class="form-group row">
+      <label class="col-sm-3 col-form-label" for="">Nombre</label>
+      <input class="col-sm-4" type="text" #name>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-3 col-form-label" for="">Director</label>
+      <input class="col-sm-4" type="text" #director>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-3 col-form-label" for="">Año</label>
+      <input class="col-sm-4" type="text" #year>
+    </div>
+    <button class="btn btn-info" (click)="getMovieToAdd(name.value, year.value, director.value)">Añadir</button>
+  </div>
+  <!--.card-body-->
+</div>
+<!--.container-->

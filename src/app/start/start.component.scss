@@ -1,0 +1,51 @@
+.titleContainer hr{
+    position: absolute;
+    top: 47px;
+    left: 80px;
+    width: 220px;
+    border-bottom: 1px solid #17a2b8;
+}
+
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    color: #17a2b8;
+}
+
+.movieNameContainer, .movieYearContainer, .movieDirectorContainer {
+    border-right: 1px solid #17a2b8;
+}
+.key {
+   font-weight: bold;
+   margin-top: 3px;
+}
+
+.next {
+    margin-bottom: 10px;
+}
+.change {
+    margin-left: 20px;
+}
+
+@media (min-width: 1200px){
+    .titleContainer hr {
+        width: 500px;
+        top: 75px;
+        left: 495px;
+    }
+
+    .title {
+        font-size: 52px;
+    }
+
+    .key {
+        font-size: 20px;
+    }
+    .data {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 28px;
+    }
+}
