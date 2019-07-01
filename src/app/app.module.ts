@@ -11,6 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { MoviesearchComponent } from './moviesearch/moviesearch.component';
 import { RatePipe } from './rate.pipe';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RatePipe } from './rate.pipe';
     MovieDetailsComponent,
     MoviesComponent,
     MoviesearchComponent,
-    RatePipe
+    RatePipe,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

@@ -56,7 +56,7 @@ export class MoviesService {
   public obtainMovieApi(movieTitle: string): Observable<any> {
     return this.http.get('https://api.themoviedb.org/3/search/movie', {
       headers: {
-        'Access-Control-Allow-Origin': 'null'
+        'Access-Control-Allow-Origin': '*'
       },
       params: {
         api_key: 'b1b4e837cbaa37f67bb672147a036040',

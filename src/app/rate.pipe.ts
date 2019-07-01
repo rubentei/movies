@@ -8,7 +8,6 @@ export class RatePipe implements PipeTransform {
   transform(value: number): string {
     
     const rate = Math.floor(value/2);
-    console.log(rate);
     if (rate <= 0) {
       return '☆';
     }
