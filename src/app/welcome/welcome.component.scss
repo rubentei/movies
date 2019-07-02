@@ -28,11 +28,29 @@
       height: 235px;
     }
 
+    .buttonContainer {
+      margin-left: 32%;
+    }
+
     button {
       margin: 90px 0; 
       font-size: 20px;
       text-transform: uppercase;
       font-weight: bold;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    margin-left: 18%;
+  } 
+  
+  .logoContainer {
+    margin-left: 43%;
+  }
+
+  .buttonContainer {
+    margin-left: 52% !important;
   }
 }
