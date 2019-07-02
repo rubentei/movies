@@ -8,6 +8,10 @@
   font-family: 'Russo One', sans-serif;
 }
 
+.button-container {
+    width: 40%;
+    margin-left: 40%;
+}
 
 .no_movies {
   font-size: 18px;
@@ -18,4 +22,18 @@
 .stars {
   font-size: 22px;
   color: gold;
+}
+
+@media (min-width: 1200px) {
+   .subtitle {
+       margin-right: 6.2%;
+   }
+   
+    .button-container {
+        margin-left: 46%;
+    }
+
+    .card-img-top {
+        height: 434px;
+    }
 }
