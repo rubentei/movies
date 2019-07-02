@@ -1,6 +1,8 @@
-# FirstApp
+# Info Movies Search (ANGULAR)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Development server
 
