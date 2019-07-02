@@ -1,13 +1,21 @@
-.subtitle {
-    color: #17A2B8;
+.container {
+  min-height: 650px;
+  width: 100%;
 }
 
-.no_movies {
-    font-size: 18px;
-    color: #17A2B8;
-    font-weight: bold;
+.subtitle {
+  color: #ffffff;
+  font-family: 'Russo One', sans-serif;
 }
+
+
+.no_movies {
+  font-size: 18px;
+  color: #17A2B8;
+  font-weight: bold;
+}
+
 .stars {
-    font-size: 22px;
-    color: gold;
+  font-size: 22px;
+  color: gold;
 }

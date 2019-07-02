@@ -1,42 +1,50 @@
 <div class="container">
-  <div class="row">
-  <div class="subtitle text-center text-uppercase mt-3 mb-4 col-10 offset-1">
-    <h2>Movies Search</h2>
-  </div>
-  <!--.subtitle-->
-  <div class="movieInput col-12">
-    <input class="col-8 offset-2" type="text" #title>
-  </div>
-  <!--.movieInput-->
-
-  <div class="button-container col-12 mt-3 row">
-    <button class="btn btn-info col-7 offset-3" (click)=getMovie(title.value)>Buscar</button>
-  </div>
-  <!--.button-container-->
-</div><!--.row-->
-</div>
-<!--.container-->
-
-<div class="container">
-  <div class="row mt-3">
-    <div *ngIf="movieResult.length === 0" class="no_movies_container card-body shadow p-3 mb-5 bg-white rounded col-12">
-      <p class="no_movies text-center mb-4 card-text">Busca tu película por título</p>
-    </div>
-    <!--.no_movies_container-->
-
-    <div class="col-md-4 col-sm-6" *ngFor="let movie of movieResult">
-      <div *ngIf="movieResult.length >0">
-        <img src="{{url}}{{movie.poster_path}}" class="card-img-top" alt="imagen resultado">
-        <div class="card-body shadow p-3 mb-5 bg-white rounded">
-          <h5 class="card-title">{{movie.title | uppercase }}</h5>
-          <p class="card-text">{{movie.release_date | date: 'yyyy'}}</p>
-          <p class="card-text stars">{{movie.vote_average | rate}}</p>
-          <p class="card-text">{{movie.overview}}</p>
-        </div>
-        <!--card-body-->
+  <div class="SearchContainer">
+    <div class="row">
+      <div class="subtitleContainer mt-3 mb-1 ml-5 col-xs-12">
+        <h2 class="subtitle text-center text-uppercase">Movies Search</h2>
       </div>
-      <!--.col-->
+      <!--.subtitle-->
+    </div>
+    <div class="row">
+      <div class="movieInput col-12">
+        <input class="col-8 offset-2" type="text" #title>
+      </div>
+      <!--.movieInput-->
+    </div>
+    <div class="row">
+      <div class="button-container col-12 mt-3 row">
+        <button class="btn btn-info col-7 offset-3" (click)=getMovie(title.value)>Buscar</button>
+      </div>
+      <!--.button-container-->
     </div>
     <!--.row-->
+  </div>
+  <!--.SearchContainer-->
+
+  <div class="ResultContainer">
+    <div class="row mt-3">
+      <div *ngIf="movieResult.length === 0"
+        class="no_movies_container card-body shadow p-3 mb-5 bg-white rounded col-12">
+        <p class="no_movies text-center mb-4 card-text">Busca tu película por título</p>
+      </div>
+      <!--.no_movies_container-->
+
+      <div class="col-md-4 col-sm-6" *ngFor="let movie of movieResult">
+        <div *ngIf="movieResult.length >0">
+          <img src="{{url}}{{movie.poster_path}}" class="card-img-top" alt="imagen resultado">
+          <div class="card-body shadow p-3 mb-5 bg-white rounded">
+            <h5 class="card-title">{{movie.title | uppercase }}</h5>
+            <p class="card-text">{{movie.release_date | date: 'yyyy'}}</p>
+            <p class="card-text stars">{{movie.vote_average | rate}}</p>
+            <p class="card-text">{{movie.overview}}</p>
+          </div>
+          <!--card-body-->
+        </div>
+        <!--.col-->
+      </div>
+      <!--.row-->
+    </div>
+    <!--.resultContainer-->
   </div>
   <!--.container-->
