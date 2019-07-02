@@ -4,6 +4,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+## _____________________________________________________________________________________________________________________
+
+![example1](https://i.ibb.co/sw3dpTX/m1.jpg)
+![example2](https://i.ibb.co/GkDHkvd/m2.jpg)
+![example3](https://i.ibb.co/1Qp6fDr/m3.jpg)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
