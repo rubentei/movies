@@ -24,7 +24,7 @@
     "@angular/router": "~8.0.1",
     "@ng-bootstrap/ng-bootstrap": "^5.0.0-rc.0",
     "bootstrap": "^4.3.1",
-    "cdk": "^0.36.0",
+    "cdk": "^2.43.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "flex-layout": "^1.0.1",
